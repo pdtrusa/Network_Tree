@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.fujitsu.fnc.sdnfw</groupId>
+		<artifactId>osgi-api</artifactId>
+		<version>5.2.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>vidya-mula-osgi-api</artifactId>
+	<packaging>bundle</packaging>
+	<name>vidya-mula-osgi-api</name>
+	<description>Vidya Mula OSGI API</description>
+	<dependencies>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Bundle-SymbolicName>com.fujitsu.fnc.sdnfw.vidya.mula.api</Bundle-SymbolicName>
+						<Bundle-Name>VIDYA MULA OSGI API</Bundle-Name>
+						<Bundle-Vendor>FNC</Bundle-Vendor>
+						<Bundle-ActivationPolicy>eager</Bundle-ActivationPolicy>
+						<Embed-Transitive>
+							false
+						</Embed-Transitive>
+						<Export-Package>com.fujitsu.fnc.sdnfw.vidya.mula.api*</Export-Package>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
